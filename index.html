@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZol</title>
+    <meta name="description" content="TechZol - Tu tienda de accesorios tecnológicos, fundas, auriculares, vidrios templados y servicios de reparación en Córdoba Capital">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+</head>
+<body>
+    <!-- Floating Orbs Background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                TechZol
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#sobre" class="nav-link">Sobre TechZol</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li><a href="contactanos.html" class="btn-cta">Contactar</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-logo"><i class="fas fa-bolt"></i></div>
+            <h1 class="hero-title">TECHZOL</h1>
+            <p class="hero-slogan">Tu tecnología, nuestra pasión. Calidad y servicio en cada detalle.</p>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn-hero btn-primary">Ver Servicios</a>
+                <a href="#ubicacion" class="btn-hero btn-secondary">Nuestras Tiendas</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#sobre"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide slide-1">
+                    <div class="carousel-content glass-card">
+                        <div class="carousel-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h2 class="carousel-title">Accesorios de Calidad</h2>
+                        <p class="carousel-text">Encuentra las mejores fundas, auriculares y accesorios para tu dispositivo</p>
+                    </div>
+                </div>
+                <div class="carousel-slide slide-2">
+                    <div class="carousel-content glass-card">
+                        <div class="carousel-icon"><i class="fas fa-tools"></i></div>
+                        <h2 class="carousel-title">Servicio Técnico Profesional</h2>
+                        <p class="carousel-text">Reparamos computadoras, celulares y electrodomésticos con garantía</p>
+                    </div>
+                </div>
+                <div class="carousel-slide slide-3">
+                    <div class="carousel-content glass-card">
+                        <div class="carousel-icon"><i class="fas fa-store"></i></div>
+                        <h2 class="carousel-title">Dos Franquicias en Córdoba</h2>
+                        <p class="carousel-text">Visítanos en Av. Poeta Luganes o Av. Vélez Sarsfield</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-arrow next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-nav">
+                <button class="carousel-dot active" data-slide="0"></button>
+                <button class="carousel-dot" data-slide="1"></button>
+                <button class="carousel-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section about">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>TechZol</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Innovación y <span>Calidad</span> en Tecnología</h2>
+                    <p>TechZol es tu destino confiable para accesorios tecnológicos de primera calidad y servicios de reparación profesionales. Desde fundas protectoras hasta auriculares de última generación, tenemos todo lo que necesitás para tu dispositivos.</p>
+                    <p>Con años de experiencia en el mercado de Córdoba Capital, nos hemos consolidado como referentes en atención al cliente y soluciones tecnológicas integrales.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check"></i></div>
+                            <span>Productos Originales</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check"></i></div>
+                            <span>Garantía en Reparaciones</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check"></i></div>
+                            <span>Atención Personalizada</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check"></i></div>
+                            <span>Precios Competitivos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="glass-card">
+                        <div style="width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1E3A5F, #0A1628); border-radius: 16px;">
+                            <div style="text-align: center;">
+                                <i class="fas fa-store" style="font-size: 5rem; color: #3B82F6; opacity: 0.6;"></i>
+                                <p style="margin-top: 20px; color: rgba(255,255,255,0.7); font-size: 1rem;">TechZol Córdoba</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="service-title">Accesorios para Celulares</h3>
+                    <p class="service-desc">Fundas, vidrios templados, cargadores, auriculares y más para todos los modelos de smartphones.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                    <h3 class="service-title">Accesorios para Notebooks</h3>
+                    <p class="service-desc">Mouses, teclados, fundas, cargadores, hubs USB y todos los periféricos que necesitás.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-headphones"></i></div>
+                    <h3 class="service-title">Auriculares y Audio</h3>
+                    <p class="service-desc">Auriculares Bluetooth, audífonos gamer, parlantes portátiles y equipos de audio de calidad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <h3 class="service-title">PC Gamers y Componentes</h3>
+                    <p class="service-desc">Armá tu PC ideal con nuestros componentes: tarjetas gráficas, procesadores, memorias y más.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-microchip"></i></div>
+                    <h3 class="service-title">Reparación de Celulares</h3>
+                    <p class="service-desc">Cambio de pantallas, baterías, reparaciones de software y servicio técnico especializado.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                    <h3 class="service-title">Reparación de PCs</h3>
+                    <p class="service-desc">Mantenimiento, formateo, recuperación de datos, cambios de componentes y más.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-blender"></i></div>
+                    <h3 class="service-title">Electrodomésticos</h3>
+                    <p class="service-desc">Reparación de pequeños y medianos electrodomésticos. Extendemos la vida útil de tus equipos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="service-title">Vidrios Templados</h3>
+                    <p class="service-desc">Colocación profesional de vidrios templados para proteger tu pantalla de impactos y rayaduras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality GIF Section 1 -->
+    <section class="section quality-section">
+        <div class="container">
+            <div class="quality-content">
+                <div class="quality-text">
+                    <h3>Reparaciones con <span>Garantía</span></h3>
+                    <p>Nuestro equipo técnico especializado utiliza herramientas de última generación y repuestos originales para garantizar la mejor reparación. Cada trabajo viene respaldado por nuestra garantía de satisfacción.</p>
+                    <div class="quality-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Reparaciones</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quality-image">
+                    <div class="gif-container">
+                        <div style="width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1E3A5F, #3B82F6); border-radius: 28px; position: relative; overflow: hidden;">
+                            <i class="fas fa-tools" style="font-size: 5rem; color: white; animation: pulse 1.5s ease-in-out infinite;"></i>
+                            <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: white; font-size: 1rem; font-weight: 600; background: rgba(0,0,0,0.3); padding: 10px 20px; border-radius: 20px;">Servicio Técnico Profesional</div>
+                        </div>
+                        <div class="gif-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality GIF Section 2 -->
+    <section class="section quality-section">
+        <div class="container">
+            <div class="quality-content">
+                <div class="quality-image">
+                    <div class="gif-container">
+                        <div style="width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0A1628, #60A5FA); border-radius: 28px; position: relative; overflow: hidden;">
+                            <i class="fas fa-box-open" style="font-size: 5rem; color: white; animation: bounce 2s ease-in-out infinite;"></i>
+                            <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: white; font-size: 1rem; font-weight: 600; background: rgba(0,0,0,0.3); padding: 10px 20px; border-radius: 20px;">Productos de Calidad</div>
+                        </div>
+                        <div class="gif-overlay"></div>
+                    </div>
+                </div>
+                <div class="quality-text">
+                    <h3>Productos <span>Premium</span></h3>
+                    <p>En TechZol solo comercializamos productos de las mejores marcas del mercado. Cada accesorio es seleccionado cuidadosamente para garantizar durabilidad, funcionalidad y el mejor diseño.</p>
+                    <div class="quality-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Productos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Marcas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality GIF Section 3 -->
+    <section class="section quality-section">
+        <div class="container">
+            <div class="quality-content">
+                <div class="quality-text">
+                    <h3>Atención <span>Personalizada</span></h3>
+                    <p>Nuestro equipo está capacitado para asesorarte y encontrar exactamente lo que necesitás. Nos esforzamos por ofrecer una experiencia de compra única y satisfactoria para cada cliente.</p>
+                    <div class="quality-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Soporte Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quality-image">
+                    <div class="gif-container">
+                        <div style="width: 100%; height: 380px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1E3A5F, #3B82F6, #60A5FA); border-radius: 28px; position: relative; overflow: hidden;">
+                            <i class="fas fa-users" style="font-size: 5rem; color: white; animation: pulse 2s ease-in-out infinite;"></i>
+                            <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: white; font-size: 1rem; font-weight: 600; background: rgba(0,0,0,0.3); padding: 10px 20px; border-radius: 20px;">Equipo Profesional</div>
+                        </div>
+                        <div class="gif-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="ubicacion" class="section locations">
+        <div class="container">
+            <h2 class="section-title">Nuestras <span>Ubicaciones</span></h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-icon"><i class="fas fa-store"></i></div>
+                        <h3 class="location-name">TechZol - Sucursal Poeta Luganes</h3>
+                    </div>
+                    <div class="location-body">
+                        <div class="location-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Poeta Luganes, Córdoba Capital, Córdoba</span>
+                        </div>
+                        <div class="location-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun - Sáb: 9:00 a 20:00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(351) XXX-XXXX</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>poetaluganes@techzol.com</span>
+                            </div>
+                        </div>
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt" style="font-size: 1.8rem; margin-right: 10px; color: #3B82F6;"></i>
+                            Ver mapa
+                        </div>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-icon"><i class="fas fa-store"></i></div>
+                        <h3 class="location-name">TechZol - Sucursal Vélez Sarsfield</h3>
+                    </div>
+                    <div class="location-body">
+                        <div class="location-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Vélez Sarsfield, Córdoba Capital, Córdoba</span>
+                        </div>
+                        <div class="location-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Lun - Sáb: 9:00 a 20:00</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(351) XXX-XXXX</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>velezsarsfield@techzol.com</span>
+                            </div>
+                        </div>
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt" style="font-size: 1.8rem; margin-right: 10px; color: #3B82F6;"></i>
+                            Ver mapa
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section class="section payment-methods">
+        <div class="container">
+            <h2 class="section-title">Métodos de <span>Pago</span></h2>
+            <div class="payment-grid">
+                <div class="payment-item">
+                    <div class="payment-icon"><i class="fas fa-credit-card"></i></div>
+                    <p class="payment-name">Tarjetas de Crédito</p>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-icon"><i class="fas fa-credit-card"></i></div>
+                    <p class="payment-name">Tarjetas de Débito</p>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <p class="payment-name">Efectivo</p>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-icon"><i class="fas fa-university"></i></div>
+                    <p class="payment-name">Transferencia</p>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-icon"><i class="fas fa-mobile-pay"></i></div>
+                    <p class="payment-name">Mercado Pago</p>
+                </div>
+                <div class="payment-item">
+                    <div class="payment-icon"><i class="fab fa-whatsapp"></i></div>
+                    <p class="payment-name">WhatsApp Pay</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="section brands">
+        <div class="container">
+            <h2 class="section-title">Marcas <span>Asociadas</span></h2>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <span class="brand-logo">Apple</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Samsung</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Motorola</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Xiaomi</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Huawei</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">LG</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Philips</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">JBL</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Sony</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Logitech</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">Razer</span>
+                </div>
+                <div class="brand-item">
+                    <span class="brand-logo">HyperX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"><i class="fas fa-bolt"></i></div>
+                        TechZol
+                    </div>
+                    <p class="footer-desc">Tu tienda de confianza para accesorios tecnológicos y servicios de reparación en Córdoba Capital. Calidad, garantía y atención personalizada.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre" class="footer-link">Sobre TechZol</a></li>
+                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#ubicacion" class="footer-link">Ubicación</a></li>
+                        <li><a href="catalogo.html" class="footer-link">Catálogo</a></li>
+                        <li><a href="contactanos.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Reparación de Celulares</a></li>
+                        <li><a href="#" class="footer-link">Reparación de PCs</a></li>
+                        <li><a href="#" class="footer-link">Reparación de Electrodomésticos</a></li>
+                        <li><a href="#" class="footer-link">Accesorios Tech</a></li>
+                        <li><a href="#" class="footer-link">Vidrios Templados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Poeta Luganes y Av. Vélez Sarsfield, Córdoba Capital</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(351) XXX-XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@techzol.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Sáb: 9:00 a 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="footer-bottom">
+                <p>&copy; 2026 TechZol. Todos los derechos reservados. | Desarrollado por <strong>Ag Studio 2026</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

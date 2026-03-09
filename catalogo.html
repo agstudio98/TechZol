@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZol</title>
+    <meta name="description" content="Explora nuestro catálogo de accesorios tecnológicos en TechZol Córdoba">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                TechZol
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#sobre" class="nav-link">Sobre TechZol</a></li>
+                <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="index.html#ubicacion" class="nav-link">Ubicación</a></li>
+                <li><a href="catalogo.html" class="nav-link active">Catálogo</a></li>
+                <li><a href="contactanos.html" class="btn-cta">Contactar</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Nuestro Catálogo</h1>
+            <p class="page-subtitle">Descubre todos los productos disponibles en nuestras tiendas</p>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section">
+        <div class="container">
+            <!-- Search and Filters -->
+            <div class="catalog-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar productos...">
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="fundas">Fundas</button>
+                    <button class="filter-btn" data-category="auriculares">Auriculares</button>
+                    <button class="filter-btn" data-category="celulares">Celulares</button>
+                    <button class="filter-btn" data-category="notebooks">Notebooks</button>
+                    <button class="filter-btn" data-category="parlantes">Parlantes</button>
+                    <button class="filter-btn" data-category="cargadores">Cargadores</button>
+                    <button class="filter-btn" data-category="gamer">PC Gamer</button>
+                    <button class="filter-btn" data-category="vidrios">Vidrios</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Fundas -->
+                <div class="product-card" data-category="fundas">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Fundas</p>
+                        <h3 class="product-name">Funda Samsung Galaxy S24 Ultra</h3>
+                        <p class="product-price">$12.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fundas">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Fundas</p>
+                        <h3 class="product-name">Funda iPhone 15 Pro Max</h3>
+                        <p class="product-price">$15.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fundas">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Fundas</p>
+                        <h3 class="product-name">Funda Xiaomi Redmi Note 13</h3>
+                        <p class="product-price">$8.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fundas">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Fundas</p>
+                        <h3 class="product-name">Funda Motorola Edge 40</h3>
+                        <p class="product-price">$10.000</p>
+                    </div>
+                </div>
+
+                <!-- Auriculares -->
+                <div class="product-card" data-category="auriculares">
+                    <div class="product-image">
+                        <i class="fas fa-headphones"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Auriculares</p>
+                        <h3 class="product-name">Auriculares Bluetooth JBL Tune 510BT</h3>
+                        <p class="product-price">$35.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="auriculares">
+                    <div class="product-image">
+                        <i class="fas fa-headphones"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Auriculares</p>
+                        <h3 class="product-name">AirPods Pro 2da Generación</h3>
+                        <p class="product-price">$120.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="auriculares">
+                    <div class="product-image">
+                        <i class="fas fa-headphones"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Auriculares</p>
+                        <h3 class="product-name">Auriculares Sony WH-1000XM5</h3>
+                        <p class="product-price">$180.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="auriculares">
+                    <div class="product-image">
+                        <i class="fas fa-headphones"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Auriculares</p>
+                        <h3 class="product-name">Auriculares Samsung Galaxy Buds2</h3>
+                        <p class="product-price">$65.000</p>
+                    </div>
+                </div>
+
+                <!-- Celulares -->
+                <div class="product-card" data-category="celulares">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Celulares</p>
+                        <h3 class="product-name">Samsung Galaxy S24 256GB</h3>
+                        <p class="product-price">$750.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="celulares">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Celulares</p>
+                        <h3 class="product-name">iPhone 15 128GB</h3>
+                        <p class="product-price">$800.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="celulares">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Celulares</p>
+                        <h3 class="product-name">Xiaomi Redmi Note 13 Pro</h3>
+                        <p class="product-price">$380.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="celulares">
+                    <div class="product-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Celulares</p>
+                        <h3 class="product-name">Motorola Edge 40 Pro</h3>
+                        <p class="product-price">$420.000</p>
+                    </div>
+                </div>
+
+                <!-- Notebooks -->
+                <div class="product-card" data-category="notebooks">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Notebooks</p>
+                        <h3 class="product-name">Notebook Dell Inspiron 15</h3>
+                        <p class="product-price">$450.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="notebooks">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Notebooks</p>
+                        <h3 class="product-name">MacBook Air M2 13"</h3>
+                        <p class="product-price">$1.200.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="notebooks">
+                    <div class="product-image">
+                        <i class="fas fa-laptop"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Notebooks</p>
+                        <h3 class="product-name">Lenovo IdeaPad Gaming 3</h3>
+                        <p class="product-price">$680.000</p>
+                    </div>
+                </div>
+
+                <!-- Parlantes -->
+                <div class="product-card" data-category="parlantes">
+                    <div class="product-image">
+                        <i class="fas fa-volume-up"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Parlantes</p>
+                        <h3 class="product-name">JBL Flip 6</h3>
+                        <p class="product-price">$75.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="parlantes">
+                    <div class="product-image">
+                        <i class="fas fa-volume-up"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Parlantes</p>
+                        <h3 class="product-name">Sony SRS-XB43</h3>
+                        <p class="product-price">$95.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="parlantes">
+                    <div class="product-image">
+                        <i class="fas fa-volume-up"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Parlantes</p>
+                        <h3 class="product-name">Bang & Olufsen Beosound A1</h3>
+                        <p class="product-price">$150.000</p>
+                    </div>
+                </div>
+
+                <!-- Cargadores -->
+                <div class="product-card" data-category="cargadores">
+                    <div class="product-image">
+                        <i class="fas fa-plug"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cargadores</p>
+                        <h3 class="product-name">Cargador Rápido 20W USB-C</h3>
+                        <p class="product-price">$15.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cargadores">
+                    <div class="product-image">
+                        <i class="fas fa-plug"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cargadores</p>
+                        <h3 class="product-name">Cargador Inalámbrico 15W</h3>
+                        <p class="product-price">$22.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cargadores">
+                    <div class="product-image">
+                        <i class="fas fa-plug"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Cargadores</p>
+                        <h3 class="product-name">Power Bank 20000mAh</h3>
+                        <p class="product-price">$28.000</p>
+                    </div>
+                </div>
+
+                <!-- PC Gamer -->
+                <div class="product-card" data-category="gamer">
+                    <div class="product-image">
+                        <i class="fas fa-gamepad"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">PC Gamer</p>
+                        <h3 class="product-name">Mouse Gamer Logitech G502</h3>
+                        <p class="product-price">$45.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gamer">
+                    <div class="product-image">
+                        <i class="fas fa-keyboard"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">PC Gamer</p>
+                        <h3 class="product-name">Teclado Mecánico HyperX Alloy</h3>
+                        <p class="product-price">$65.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gamer">
+                    <div class="product-image">
+                        <i class="fas fa-headset"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">PC Gamer</p>
+                        <h3 class="product-name">Auricular Gamer Razer BlackShark</h3>
+                        <p class="product-price">$85.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gamer">
+                    <div class="product-image">
+                        <i class="fas fa-desktop"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">PC Gamer</p>
+                        <h3 class="product-name">Monitor Gamer 144Hz 27"</h3>
+                        <p class="product-price">$280.000</p>
+                    </div>
+                </div>
+
+                <!-- Vidrios -->
+                <div class="product-card" data-category="vidrios">
+                    <div class="product-image">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Vidrios Templados</p>
+                        <h3 class="product-name">Vidrio Templado Premium iPhone</h3>
+                        <p class="product-price">$5.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vidrios">
+                    <div class="product-image">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Vidrios Templados</p>
+                        <h3 class="product-name">Vidrio Templado Premium Samsung</h3>
+                        <p class="product-price">$4.500</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vidrios">
+                    <div class="product-image">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="product-badge">Disponible</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Vidrios Templados</p>
+                        <h3 class="product-name">Kit Vidrio + Funda Premium</h3>
+                        <p class="product-price">$15.000</p>
+                    </div>
+                </div>
+
+                <!-- No products message -->
+                <div class="no-products" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No se encontraron productos</h3>
+                    <p>Intenta con otros términos de búsqueda o categorías</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"><i class="fas fa-bolt"></i></div>
+                        TechZol
+                    </div>
+                    <p class="footer-desc">Tu tienda de confianza para accesorios tecnológicos y servicios de reparación en Córdoba Capital. Calidad, garantía y atención personalizada.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#sobre" class="footer-link">Sobre TechZol</a></li>
+                        <li><a href="index.html#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="index.html#ubicacion" class="footer-link">Ubicación</a></li>
+                        <li><a href="catalogo.html" class="footer-link">Catálogo</a></li>
+                        <li><a href="contactanos.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Reparación de Celulares</a></li>
+                        <li><a href="#" class="footer-link">Reparación de PCs</a></li>
+                        <li><a href="#" class="footer-link">Reparación de Electrodomésticos</a></li>
+                        <li><a href="#" class="footer-link">Accesorios Tech</a></li>
+                        <li><a href="#" class="footer-link">Vidrios Templados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Poeta Luganes y Av. Vélez Sarsfield, Córdoba Capital</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(351) XXX-XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@techzol.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Sáb: 9:00 a 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+<p>&copy; 2024 TechZol. Todos los derechos reservados. | Desarrollado por <strong>Ag Studio 2026</strong> <i class="fas fa-heart" style="color: #3B82F6;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

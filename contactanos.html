@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZol</title>
+    <meta name="description" content="Contácta con TechZol - Envíanos tu consulta sobre accesorios tecnológicos y servicios de reparación">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                TechZol
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#sobre" class="nav-link">Sobre TechZol</a></li>
+                <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="index.html#ubicacion" class="nav-link">Ubicación</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li><a href="contactanos.html" class="nav-link active">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contáctanos</h1>
+            <p class="page-subtitle">Estamos aquí para ayudarte. Escríbenos y te responderemos pronto.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="info-list">
+                        <div class="info-list-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Dirección Principal</h4>
+                                <p>Av. Poeta Luganes y Av. Vélez Sarsfield<br>Córdoba Capital, Córdoba</p>
+                            </div>
+                        </div>
+                        <div class="info-list-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Teléfono</h4>
+                                <p>(351) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-list-item">
+                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="info-text">
+                                <h4>WhatsApp</h4>
+                                <p>+54 9 351 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="info-list-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p>info@techzol.com</p>
+                            </div>
+                        </div>
+                        <div class="info-list-item">
+                            <div class="info-icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-text">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Sábado: 9:00 a 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>Horarios por Sucursal</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Poeta Luganes</span>
+                                <span>9:00 - 20:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Vélez Sarsfield</span>
+                                <span>9:00 - 20:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Domingo</span>
+                                <span>Cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <h4 style="color: var(--text-primary); font-family: 'Exo 2', sans-serif; font-weight: 600; margin-bottom: 15px;">Nuestras Redes</h4>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>Envíanos un Mensaje</h3>
+                    <p>Completa el formulario y te responderemos a la brevedad</p>
+                    
+                    <div class="form-message"></div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono (Opcional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="351 123 4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Consulta sobre...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" placeholder="Escribe tu consulta aquí..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info Section -->
+    <section class="section" style="background: var(--secondary);">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir <span>TechZol</span>?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-star"></i></div>
+                    <h3 class="service-title">Calidad Garantizada</h3>
+                    <p class="service-desc">Todos nuestros productos y servicios cuentan con garantía de satisfacción.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="service-title">Atención Personalizada</h3>
+                    <p class="service-desc">Nuestro equipo te asesora para encontrar exactamente lo que necesitás.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="service-title">Servicio Técnico</h3>
+                    <p class="service-desc">Reparaciones profesionales con repuestos originales y garantía.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3 class="service-title">Entrega Rápida</h3>
+                    <p class="service-desc">Envíos locales y posibilidad de retiro en cualquiera de nuestras sucursales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"><i class="fas fa-bolt"></i></div>
+                        TechZol
+                    </div>
+                    <p class="footer-desc">Tu tienda de confianza para accesorios tecnológicos y servicios de reparación en Córdoba Capital. Calidad, garantía y atención personalizada.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#sobre" class="footer-link">Sobre TechZol</a></li>
+                        <li><a href="index.html#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="index.html#ubicacion" class="footer-link">Ubicación</a></li>
+                        <li><a href="catalogo.html" class="footer-link">Catálogo</a></li>
+                        <li><a href="contactanos.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Reparación de Celulares</a></li>
+                        <li><a href="#" class="footer-link">Reparación de PCs</a></li>
+                        <li><a href="#" class="footer-link">Reparación de Electrodomésticos</a></li>
+                        <li><a href="#" class="footer-link">Accesorios Tech</a></li>
+                        <li><a href="#" class="footer-link">Vidrios Templados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Poeta Luganes y Av. Vélez Sarsfield, Córdoba Capital</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(351) XXX-XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@techzol.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Sáb: 9:00 a 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+<p>&copy; 2024 TechZol. Todos los derechos reservados. | Desarrollado por <strong>Ag Studio 2026</strong> <i class="fas fa-heart" style="color: #3B82F6;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            // Replace with your actual EmailJS public key
+            // Sign up at https://www.emailjs.com/ to get your credentials
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+
+        // Override the contact form to use EmailJS
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+
+            const submitBtn = form.querySelector('.btn-submit');
+            const formMessage = form.querySelector('.form-message');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const name = form.querySelector('#name').value.trim();
+                const email = form.querySelector('#email').value.trim();
+                const phone = form.querySelector('#phone').value.trim();
+                const subject = form.querySelector('#subject').value.trim();
+                const message = form.querySelector('#message').value.trim();
+                
+                // Validate
+                if (!name || !email || !message) {
+                    showMessage('Por favor, complete todos los campos requeridos.', 'error');
+                    return;
+                }
+                
+                if (!isValidEmail(email)) {
+                    showMessage('Por favor, ingrese un correo electrónico válido.', 'error');
+                    return;
+                }
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+                
+                // Prepare template parameters
+                const templateParams = {
+                    from_name: name,
+                    from_email: email,
+                    phone: phone || 'No proporcionado',
+                    subject: subject || 'Consulta desde web',
+                    message: message,
+                    to_email: 'info@techzol.com'
+                };
+                
+                try {
+                    // Send email using EmailJS
+                    // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS credentials
+                    await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams);
+                    
+                    showMessage('¡Mensaje enviado exitosamente! Nos pondremos en contacto pronto.', 'success');
+                    form.reset();
+                } catch (error) {
+                    console.error('EmailJS Error:', error);
+                    showMessage('Hubo un error al enviar el mensaje. Por favor, intente de nuevo o contáctenos por WhatsApp.', 'error');
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Mensaje';
+                }
+            });
+            
+            function showMessage(text, type) {
+                formMessage.textContent = text;
+                formMessage.className = 'form-message ' + type;
+                
+                // Auto hide after 5 seconds
+                setTimeout(() => {
+                    formMessage.className = 'form-message';
+                }, 5000);
+            }
+            
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        });
+    </script>
+</body>
+</html>
+
